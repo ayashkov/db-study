@@ -1,0 +1,29 @@
+$b39f008e:
+  name: customer
+  columns:
+    $e0a5ac31:
+      name: person_id
+      type: integer
+      required: true
+    $b57055ca:
+      name: username
+      type: varchar(32)
+      required: true
+
+$d39a4750:
+  name: person
+  columns:
+    $a849426a:
+      name: id
+      type: integer
+      required: true
+    $0dca8fb7:
+      name: name
+      type: varchar(128)
+      required: true
+    $3e0ee234:
+      name: email
+      type: varchar(128)
+    $1f386cbc:
+      name: dob
+      type: date
