@@ -1,3 +1,20 @@
+$1a73af9e:
+  name: contact
+  columns:
+    $36473741:
+      name: person_id
+      type: integer
+      required: true
+    $9d87763f:
+      name: type
+      type: char(1)
+      required: true
+      check: in ('E', 'P', 'M', 'W', 'H')
+    $9513de58:
+      name: value
+      type: varchar(256)
+      required: true
+
 $b39f008e:
   name: customer
   columns:
@@ -21,13 +38,6 @@ $d39a4750:
       name: name
       type: varchar(256)
       required: true
-    $3e0ee234:
-      name: email
-      type: varchar(256)
-      required: true
-    $0f076a27:
-      name: phone
-      type: varchar(16)
     $1f386cbc:
       name: dob
       type: date

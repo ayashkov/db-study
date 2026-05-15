@@ -1,3 +1,10 @@
+alter table contact add
+    constraint contact$pk primary key (
+        person_id,
+        type
+    )
+/
+
 alter table customer add
     constraint customer$pk primary key (
         person_id
@@ -13,17 +20,5 @@ alter table customer add
 alter table person add
     constraint person$pk primary key (
         id
-    )
-/
-
-alter table person add
-    constraint person$ak$email unique (
-        email
-    )
-/
-
-alter table person add
-    constraint person$ak$phone unique (
-        phone
     )
 /
