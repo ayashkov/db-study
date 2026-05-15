@@ -19,11 +19,11 @@ $d39a4750:
       required: true
     $0dca8fb7:
       name: name
-      type: varchar(128)
+      type: varchar(256)
       required: true
     $3e0ee234:
       name: email
-      type: varchar(128)
+      type: varchar(256)
     $1f386cbc:
       name: dob
       type: date
