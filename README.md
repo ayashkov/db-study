@@ -18,6 +18,7 @@ A study of database schema version control and migration scripts.
 
 2.0.0
 : Split `contact` table from `person`. Rename `customer` to `user`.
+    Split `name` into `given_name` and `family_name`.
 
 1.2.0
 : Add `interraction` table connected to `customer`.

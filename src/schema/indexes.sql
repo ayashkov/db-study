@@ -3,8 +3,13 @@ create index contact$ix$value on contact (
 )
 /
 
-create index person$ix$name on person (
-    name
+create index person$ix$given_name on person (
+    given_name
+)
+/
+
+create index person$ix$family_name on person (
+    family_name
 )
 /
 

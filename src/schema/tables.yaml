@@ -34,9 +34,13 @@ $d39a4750:
       name: id
       type: integer
       required: true
+    $c66ac306:
+      name: given_name
+      type: varchar(128)
+      required: true
     $0dca8fb7:
-      name: name
-      type: varchar(256)
+      name: family_name
+      type: varchar(128)
       required: true
     $1f386cbc:
       name: dob

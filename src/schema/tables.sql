@@ -7,7 +7,8 @@ create table contact (
 
 create table person (
     id integer not null,
-    name varchar(256) not null,
+    given_name varchar(128) not null,
+    family_name varchar(128) not null,
     dob date
 )
 /
