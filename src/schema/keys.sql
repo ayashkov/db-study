@@ -21,3 +21,9 @@ alter table person add
         email
     )
 /
+
+alter table person add
+    constraint person$ak$phone unique (
+        phone
+    )
+/
