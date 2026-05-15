@@ -6,8 +6,8 @@ create table customer (
 
 create table person (
     id integer not null,
-    name varchar(128) not null,
-    email varchar(128),
+    name varchar(256) not null,
+    email varchar(256),
     dob date
 )
 /
