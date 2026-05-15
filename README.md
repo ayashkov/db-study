@@ -47,3 +47,39 @@ echo -n d39a4750.dob | sha1sum | cut -c -8
 echo -n 1f386cbc | sha1sum | cut -c -8
 1dbcc245
 ```
+
+## Releasing
+
+### Minor Branch
+
+```shell
+git branch -u origin releng/1
+echo "2.0.0-SNAPSHOT" >VERSION
+git commit -a -m "Prepare for the next development iteration"
+git push
+git checkout releng/1
+git push
+```
+
+### Patch Branch
+
+```shell
+git branch -u origin releng/1.0
+echo "1.1.0-SNAPSHOT" >VERSION
+git commit -a -m "Prepare for the next development iteration"
+git push
+git checkout releng/1.0
+git push
+```
+
+### Version
+
+```shell
+echo "1.0.0" >VERSION
+git commit -a -m "Release v. 1.0.0"
+git tag --sign -m "Release v. 1.0.0" v1.0.0
+echo "1.0.1-SNAPSHOT" >VERSION
+git commit -a -m "Prepare for the next development iteration"
+git push
+git push --tags
+```
