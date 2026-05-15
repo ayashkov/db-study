@@ -53,23 +53,23 @@ echo -n 1f386cbc | sha1sum | cut -c -8
 ### Minor Branch
 
 ```shell
-git branch -u origin releng/1
+git branch releng/1
 echo "2.0.0-SNAPSHOT" >VERSION
 git commit -a -m "Prepare for the next development iteration"
 git push
 git checkout releng/1
-git push
+git push -u origin/releng/1
 ```
 
 ### Patch Branch
 
 ```shell
-git branch -u origin releng/1.0
+git branch releng/1.0
 echo "1.1.0-SNAPSHOT" >VERSION
 git commit -a -m "Prepare for the next development iteration"
 git push
 git checkout releng/1.0
-git push
+git push -u origin/releng/1.0
 ```
 
 ### Version
