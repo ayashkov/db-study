@@ -24,6 +24,7 @@ $d39a4750:
     $3e0ee234:
       name: email
       type: varchar(256)
+      required: true
     $1f386cbc:
       name: dob
       type: date
