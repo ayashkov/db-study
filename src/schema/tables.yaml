@@ -16,7 +16,7 @@ $1a73af9e:
       required: true
 
 $b39f008e:
-  name: customer
+  name: user
   columns:
     $e0a5ac31:
       name: person_id

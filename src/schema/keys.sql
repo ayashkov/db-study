@@ -5,20 +5,20 @@ alter table contact add
     )
 /
 
-alter table customer add
-    constraint customer$pk primary key (
+alter table person add
+    constraint person$pk primary key (
+        id
+    )
+/
+
+alter table user add
+    constraint user$pk primary key (
         person_id
     )
 /
 
-alter table customer add
-    constraint customer$ak$username unique (
+alter table user add
+    constraint user$ak$username unique (
         username
-    )
-/
-
-alter table person add
-    constraint person$pk primary key (
-        id
     )
 /

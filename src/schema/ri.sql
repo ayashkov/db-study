@@ -6,8 +6,8 @@ alter table contact add
     )
 /
 
-alter table customer add
-    constraint customer$fk$person foreign key (
+alter table user add
+    constraint user$fk$person foreign key (
         person_id
     ) references person (
         id
