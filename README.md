@@ -58,7 +58,7 @@ echo "2.0.0-SNAPSHOT" >VERSION
 git commit -a -m "Prepare for the next development iteration"
 git push
 git checkout releng/1
-git push -u origin/releng/1
+git push -u origin releng/1
 ```
 
 ### Patch Branch
@@ -69,7 +69,7 @@ echo "1.1.0-SNAPSHOT" >VERSION
 git commit -a -m "Prepare for the next development iteration"
 git push
 git checkout releng/1.0
-git push -u origin/releng/1.0
+git push -u origin releng/1.0
 ```
 
 ### Version
