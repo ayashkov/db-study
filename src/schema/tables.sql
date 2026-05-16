@@ -7,7 +7,7 @@ create table contact (
 
 create table interaction (
     id integer not null,
-    customer_id integer not null,
+    user_id integer not null,
     occurred timestamp not null,
     summary clob not null
 )

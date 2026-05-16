@@ -54,7 +54,7 @@ $fd60a1db:
       type: integer
       required: true
     $3e356ecb:
-      name: customer_id
+      name: user_id
       type: integer
       required: true
     $3dc0d975:
