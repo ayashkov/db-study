@@ -31,3 +31,23 @@ $d39a4750:
     $1f386cbc:
       name: dob
       type: date
+
+$fd60a1db:
+  name: interaction
+  columns:
+    $22c4a812:
+      name: id
+      type: integer
+      required: true
+    $3e356ecb:
+      name: customer_id
+      type: integer
+      required: true
+    $3dc0d975:
+      name: occurred
+      type: timestamp
+      required: true
+    $bb27b1af:
+      name: summary
+      type: clob
+      required: true

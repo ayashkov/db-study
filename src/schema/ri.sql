@@ -5,3 +5,11 @@ alter table customer add
         id
     )
 /
+
+alter table interaction add
+    constraint interaction$fk$customer foreign key (
+        customer_id
+    ) references person (
+        id
+    )
+/

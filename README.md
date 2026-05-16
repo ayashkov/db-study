@@ -20,10 +20,10 @@ A study of database schema version control and migration scripts.
 : Split `contact` table from `person`. Rename `customer` to `user`.
 
 1.2.0
-: Add `interraction` table connected to `customer`.
+: Add `interaction` table connected to `customer`.
 
 2.1.0
-: Re-connect `interraction` to `contact`.
+: Re-connect `interaction` to `contact`.
 
 ## Durable Identifiers
 
