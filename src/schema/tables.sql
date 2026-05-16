@@ -10,6 +10,7 @@ create table interaction (
     occurred timestamp not null,
     summary clob not null
 )
+/
 
 create table person (
     id integer not null,
