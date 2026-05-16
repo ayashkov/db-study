@@ -1,3 +1,8 @@
+create index customer$ix$username on customer (
+    username
+)
+/
+
 create index interaction$ix$customer on interaction (
     customer_id
 )
