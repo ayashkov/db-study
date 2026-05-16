@@ -1,5 +1,15 @@
 create index contact$ix$value on contact (
-    name
+    value
+)
+/
+
+create index interaction$ix$user on interaction (
+    user_id
+)
+/
+
+create index interaction$ix$occurred on interaction (
+    occurred
 )
 /
 

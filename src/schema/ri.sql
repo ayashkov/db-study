@@ -6,6 +6,14 @@ alter table contact add
     )
 /
 
+alter table interaction add
+    constraint interaction$fk$user foreign key (
+        user_id
+    ) references user (
+        person_id
+    )
+/
+
 alter table user add
     constraint user$fk$person foreign key (
         person_id
