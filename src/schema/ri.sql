@@ -7,10 +7,12 @@ alter table contact add
 /
 
 alter table interaction add
-    constraint interaction$fk$user foreign key (
-        user_id
-    ) references user (
-        person_id
+    constraint interaction$fk$contact foreign key (
+        person_id,
+        type
+    ) references contact (
+        person_id,
+        type
     )
 /
 

@@ -3,8 +3,9 @@ create index contact$ix$value on contact (
 )
 /
 
-create index interaction$ix$user on interaction (
-    user_id
+create index interaction$ix$contact on interaction (
+    person_id,
+    type
 )
 /
 
