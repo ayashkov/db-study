@@ -5,12 +5,9 @@ create table contact /* $1a73af9e */ (
 )
 /
 
-create table interaction /* $fd60a1db */ (
-    id /* $22c4a812 */ integer not null,
-    person_id /* $3e356ecb */ integer not null,
-    type /* $8820b7bb */ char(1) not null,
-    occurred /* $3dc0d975 */ timestamp not null,
-    summary /* $bb27b1af */ clob not null
+create table user /* $b39f008e */ (
+    person_id /* $e0a5ac31 */ integer not null,
+    username /* $b57055ca */ varchar(32) not null
 )
 /
 
@@ -22,8 +19,11 @@ create table person /* $d39a4750 */ (
 )
 /
 
-create table user /* $b39f008e */ (
-    person_id /* $e0a5ac31 */ integer not null,
-    username /* $b57055ca */ varchar(32) not null
+create table interaction /* $fd60a1db */ (
+    id /* $22c4a812 */ integer not null,
+    person_id /* $3e356ecb */ integer not null,
+    type /* $8820b7bb */ char(1) not null,
+    occurred /* $3dc0d975 */ timestamp not null,
+    summary /* $bb27b1af */ clob not null
 )
 /
