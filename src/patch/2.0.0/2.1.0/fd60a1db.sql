@@ -6,8 +6,12 @@
 --       type: integer
 --       required: true
 --     $3e356ecb:
---       name: customer_id
+--       name: person_id
 --       type: integer
+--       required: true
+--     $8820b7bb:
+--       name: type
+--       type: char(1)
 --       required: true
 --     $3dc0d975:
 --       name: occurred
@@ -20,7 +24,8 @@
 
 create table interaction (
     id integer not null,
-    customer_id integer not null,
+    person_id integer not null,
+    type char(1) not null,
     occurred timestamp not null,
     summary clob not null
 )
