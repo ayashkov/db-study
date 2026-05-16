@@ -21,10 +21,10 @@ A study of database schema version control and migration scripts.
     Split `name` into `given_name` and `family_name`.
 
 1.2.0
-: Add `interraction` table connected to `customer`.
+: Add `interaction` table connected to `customer`.
 
 2.1.0
-: Re-connect `interraction` to `contact`.
+: Re-connect `interaction` to `contact`.
 
 ## Durable Identifiers
 

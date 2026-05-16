@@ -5,6 +5,12 @@ alter table contact add
     )
 /
 
+alter table interaction add
+    constraint interaction$pk primary key (
+        id
+    )
+/
+
 alter table person add
     constraint person$pk primary key (
         id
